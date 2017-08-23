@@ -6,6 +6,6 @@
 </head>
 <body>
 	<h1>陈卓州的个人网站</h1>
-	
+	<?php  echo "try php"; ?>
 </body>
 </html>
