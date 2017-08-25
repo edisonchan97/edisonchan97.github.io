@@ -408,11 +408,12 @@
 			$email = $("#email").val();
 			$tel = $("#tel").val();
 			$question = $("#question").val();
+			body="我的姓名: "+$name+"%0a%0d"+"我的邮箱 is: "+$email+"%0a%0d"+"我的电话号码: "+$tel+"%0a%0d"+"我的需求:"+"%0a%0d"+$question;
 			// alert("222");
 			if($name=="" || $email=="" || $tel=="" || $question==""){
 				alert("尚有内容未填写，请完成填写");
 			}else{
-				location.href="mailto:szpengfengrui@126.com?subject=Name:"+$name+"Tel:"+$tel+"E-mail:"+$email+"&body="+$question;
+				location.href="mailto:szpengfengrui@126.com?subject="+$name+"&body="+body;
 			}
 		});
 	</script>
