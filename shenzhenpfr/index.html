@@ -405,12 +405,12 @@
 		});
 		$("#sendmail").click(function(){
 			$name = $("#name").val();
-			$email = $("#emaill").val();
+			$email = $("#email").val();
 			$tel = $("#tel").val();
 			$question = $("#question").val();
 			// alert("222");
 			if($name=="" || $email=="" || $tel=="" || $question==""){
-				alert("请完成填写");
+				alert("尚有内容未填写，请完成填写");
 			}else{
 				location.href="mailto:szpengfengrui@126.com?subject=Name:"+$name+"Tel:"+$tel+"E-mail:"+$email+"&body="+$question;
 			}
