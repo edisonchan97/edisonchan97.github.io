@@ -17,6 +17,7 @@
 /* 额，开心~~因为我用的是js实现的*/ 
 *{
   -webkit-transition: all .3s;
+  -ms-transition: all .3s;
   transition: all .3s;
 }
 body{
@@ -38,6 +39,7 @@ body{
 }
 html{
   -webkit-perspective: 1000px;
+      -ms-perspective: 1000px;
           perspective: 1000px;
 }
 #content{
@@ -47,6 +49,7 @@ html{
   display:inline-block;
   left: 10px; top: 40px; 
   -webkit-transform:  rotateY(15deg) translateZ(-100px) ;
+      -ms-transform:  rotateY(15deg) translateZ(-100px) ;
           transform:  rotateY(15deg) translateZ(-100px) ;
 }
 /*额代码高亮确实是问题，不知道有没有别的办法*/
@@ -140,7 +143,7 @@ html{
 	content:"&#9745 CET-4,能借助工具快速阅读技术相关英文API文档";
 }
 #project li:first-child:after{
-	content:"&#9733 深圳市鹏锋瑞装饰设计工程有限公司官网&lfloor;即将上线&floor;(2017年08月至今)"
+	content:"&#9733 深圳市鹏锋瑞装饰设计工程有限公司官网&lfloor;即将上线&rfloor;(2017年08月至今)"
 }
 #project li:nth-child(2):after{
 	content:"&#9672 单页面的网站,编码设计均由本人实现,使用jquery实现图片懒加载与图片的轮播，通过媒体查询实现响应式。"
