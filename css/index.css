@@ -1,0 +1,65 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+/*样式重置结束*/
+body{
+    /*background: url("../images/bg.jpeg");*/
+    /*background-color: #ffffff;*/
+    /*background-color:rgba(255,255,255,0.6);*/
+    color: #000;
+}
+#my-title{
+    margin: 15px 0 10px 30px;
+}
+h1{
+    font-size: 36px;
+}
+#my-nav{
+    display: flex;
+    justify-content:center;
+}
+#my-nav li{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #873399;
+    padding: 20px;
+    margin: 0 20px;
+    background: #ffcccc;
+    border-radius: 10px;
+}
+#nav-title{
+    display: none;
+}
+.display{
+    display: block;
+}
+@media screen and (max-width: 640px) {
+    #my-nav{
+        display: block;
+        /*justify-content:center;*/
+        /*float: left;*/
+    }
+    #my-nav li{
+        /*flex: 1;*/
+        /*text-align: center;*/
+        /*font-weight: bold;*/
+        /*font-size: 20px;*/
+        color: #879999;
+        padding: 10px;
+        margin: 0px 20px 5px 20px;
+        /*background: #00d6b2;*/
+        display: none;
+        /*position: absolute;*/
+    }
+    #my-nav #nav-title{
+        display: block;
+    }
+}

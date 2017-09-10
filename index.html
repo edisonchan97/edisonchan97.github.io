@@ -2,13 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Edison卓州</title>
+	<link rel="stylesheet" href="css/index.css">
 	<script type="text/javascript" src="javascripts/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-	<h1>陈卓州的个人网站</h1>
-	<h3><a href="shenzhenpfr/index.html">深圳鹏锋瑞</a></h3>
-	<script>console.log("测试js")</script>
+	<div id="my-title"><h1>Edison的树屋</h1></div>
+	<div>
+		<ul id="my-nav">
+			<li id="nav-title">LOOK ME</li>
+			<li>MY INFO</li>
+			<li>MY PROJECT</li>
+			<li>MY SHARE</li>
+		</ul>
+	</div>
+
+	<!--<h3><a href="shenzhenpfr/index.html">深圳鹏锋瑞</a></h3>-->
+	<script>
+		var flag=1;
+		var $title = $("#my-title h1").text();
+		console.log($title);
+		var Arrtitle = new Array;
+		Arrtitle = $title.split("");
+		$("#nav-title").click(function () {
+			if(flag==1){
+				$("#my-nav li").css("display","block");
+				flag=0;
+			}else{
+//				$("#my-nav").css("display","none");
+				$("#my-nav li").css("display","none");
+				$("#my-nav #nav-title").css("display","block");
+				flag=1;
+			}
+
+		})
+	</script>
 </body>
 
 </html>
