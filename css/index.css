@@ -1,6 +1,6 @@
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
 body{font:12px"ËÎÌו","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
-a{color:#2d374b;text-decoration:none}
+a{color:#4e4e4e;text-decoration:none}
 a:hover{color:#cd0200;text-decoration:underline}
 em{font-style:normal}
 li{list-style:none}
@@ -16,6 +16,9 @@ body{
 }
 #my-title{
     margin: 15px 0 10px 30px;
+}
+#introduce a{
+    color: #00d6b2;
 }
 h1{
     font-size: 36px;
@@ -65,23 +68,65 @@ h1{
         margin: 0 20px 10px 20px;
         font-size: 16px;
     }
+    #my-hobby{
+        margin-top: 10px;
+    }
+    .hobby{
+        background: #b89f7a;
+        padding: 3px 5px;
+        margin: 5px 2px;
+        display: inline-block;
+        /*float: left;*/
+        border-radius: 5px;
+    }
+    #my-label{
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: center;
+    }
+    .skill-bar{
+        margin: 15px 0 0 5px;
+        font-size: 20px;
+        padding: 5px 0;
+        border: 1px solid #FA5889;
+        border-radius: 50px;
+        width: 60%;
+        background: #FA5889;
+        display: inline-block;
+    }
+    #html,#css{
+        width: 60%;
+    }
+    #php,#js,#jquery{width:55%}
+    #nodejs{
+        width: 35%;
+    }
+    #alg{
+        width: 30%
+    }
+    #vue{
+        width: 48%;
+    }
+    label{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        width: 25%;
+        color: #A7A7A7;
+        display: inline-block;
+    }
+    #my-skill{
+        margin-bottom: 10px;
+    }
+    #map{
+        margin-top: 8px;
+        width: 90%;
+        height: 100px;
+        border: 1px solid #BBBBBB;
+        border-radius: 10px;
+    }
 }
-#my-hobby{
-    margin-top: 10px;
-}
-.hobby{
-    background: #b89f7a;
-    padding: 3px 5px;
-    margin: 5px 2px;
-    display: inline-block;
-    /*float: left;*/
-    border-radius: 5px;
-}
-#my-label{
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-}
+
 /*--------------------------*/
 
 #wechat {
