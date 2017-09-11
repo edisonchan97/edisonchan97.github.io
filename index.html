@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Edison卓州</title>
+	<title>Edison·陈卓州</title>
 	<link rel="stylesheet" href="css/index.css">
 	<script type="text/javascript" src="javascripts/jquery-1.12.4.min.js"></script>
 </head>
@@ -11,14 +11,39 @@
 	<div id="my-title"><h1>Edison的树屋</h1></div>
 	<div>
 		<ul id="my-nav">
-			<li id="nav-title">LOOK ME</li>
-			<li>MY INFO</li>
+			<!--<li >LOOK ME</li>-->
+			<li id="nav-title">MY INFO</li>
 			<li>MY PROJECT</li>
 			<li>MY SHARE</li>
 		</ul>
 	</div>
+	<div id="my-info">
+		<!--<div id="wechat">-->
+			<!--<img src="images/wechat.jpg" alt=""/>-->
+		<!--</div>-->
+		<div id="introduce">
+			我是<strong>陈卓州</strong><br>
+			出生于 <a href="">湖南岳阳</a>，生长在 <a href="">深圳</a>，就读于 <a href="">黑龙江大学</a>。
+			从祖国的南端，孤身一人来到离家乡3000多公里的 <a href="">东方小巴黎---哈尔滨</a>。
+			于是我学会了我的第五门语言（你瞅啥）。<br>
+			<strong>语言能力</strong><br>
+				湖南话，【恰杯biá酒交个piáng友】<br>
+				普通话，【在东北这几年，普通话标准不少】<br>
+				东北话，【你瞅啥，瞅你咋的】<br>
+				粤语，【识听唔识港】<br>
+				英语【The teacher said my oral English was great】<br>
+		</div>
+	</div>
 
-	<!--<h3><a href="shenzhenpfr/index.html">深圳鹏锋瑞</a></h3>-->
+
+
+
+
+
+
+
+
+
 	<script>
 		var flag=1;
 		var $title = $("#my-title h1").text();
@@ -30,7 +55,6 @@
 				$("#my-nav li").css("display","block");
 				flag=0;
 			}else{
-//				$("#my-nav").css("display","none");
 				$("#my-nav li").css("display","none");
 				$("#my-nav #nav-title").css("display","block");
 				flag=1;
