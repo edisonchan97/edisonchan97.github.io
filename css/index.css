@@ -39,9 +39,6 @@ h1{
 #nav-title{
     display: none;
 }
-.display{
-    display: block;
-}
 @media screen and (max-width: 640px) {
     #my-nav{
         display: block;
@@ -63,15 +60,36 @@ h1{
 
 
 /*--------------------------*/
-#my-info{
-    margin: 0 20px 10px 20px;
-    font-size: 16px;
+@media screen and (max-width: 640px) {
+    #my-info {
+        margin: 0 20px 10px 20px;
+        font-size: 16px;
+    }
 }
-#wechat{
+#my-hobby{
+    margin-top: 10px;
+}
+.hobby{
+    background: #b89f7a;
+    padding: 3px 5px;
+    margin: 5px 2px;
+    display: inline-block;
+    /*float: left;*/
+    border-radius: 5px;
+}
+#my-label{
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+/*--------------------------*/
+
+#wechat {
     width: 100px;
     height: 100px;
 }
-#wechat img{
+
+#wechat img {
     width: 100%;
     height: 100%;
 }
