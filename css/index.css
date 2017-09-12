@@ -119,22 +119,50 @@ h1{
         margin-bottom: 10px;
     }
     #map{
-        margin-top: 8px;
-        width: 90%;
-        height: 100px;
+        margin: 8px auto;
+        width: 100%;
+        /*height: 100px;*/
         border: 1px solid #BBBBBB;
         border-radius: 10px;
+        text-align: center;
+        position: relative;
+        padding: 0 0 30px 0;
     }
+    #map span{
+        position: absolute;
+        background: #6E6E6E;
+        font-weight: bold;
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 10px;
+        bottom: 0;
+        right: 0;
+    }
+    #make-friend{
+        display: flex;
+    }
+    #wechat,#fb{
+        /*float: left;*/
+        /*width: 25%;*/
+        flex: 1;
+        /*height: 100px;*/
+        margin: 5px 0 5px 5px ;
+    }
+    #wechat img,#fb img{
+        width: 100%;
+        height: 100%;
+    }
+    #mail{
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+
 }
 
 /*--------------------------*/
-
-#wechat {
-    width: 100px;
-    height: 100px;
-}
-
-#wechat img {
-    width: 100%;
-    height: 100%;
+#footer{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
 }

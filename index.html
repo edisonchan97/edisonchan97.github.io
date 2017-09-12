@@ -18,9 +18,6 @@
 		</ul>
 	</div>
 	<div id="my-info">
-		<!--<div id="wechat">-->
-			<!--<img src="images/wechat.jpg" alt=""/>-->
-		<!--</div>-->
 		<div id="introduce">
 			我是<strong>陈卓州</strong><br>
 			出生于 <a href="https://www.baidu.com/s?wd=%E6%B9%96%E5%8D%97%E5%B2%B3%E9%98%B3">湖南岳阳</a>，
@@ -63,12 +60,35 @@
 			<div id="knowledge">
 				<strong>对于知识的理解</strong><br/>
 				<div id="map">
+					<a href="http://www.jianshu.com/p/07789ed8ad8b">前端本地化存储HTML5</a>
+					<a href="http://www.jianshu.com/p/f8a02259150f">js数组赋值引用</a>
+					<a href="http://www.jianshu.com/p/c3510641e514">结合实例浅谈JS回调函数、函数传参及作用域</a>
+					<a href="http://www.jianshu.com/p/217c3ca4c3e8">nodemailer的使用</a>
+					<a href="http://www.jianshu.com/p/da67afc696f6">基于websocket的简易聊天室</a>
 
+					<span>未完待续...</span>
 				</div>
+			</div>
+
+			<strong>交个朋友</strong><br/>
+			<div id="make-friend">
+				<div id="wechat">
+				<img src="images/wechat.jpg" alt=""/>
+					<figcaption>WECHAT</figcaption>
+				</div>
+				<div id="fb">
+					<img src="images/fb.jpg" alt=""/>
+					<figcaption>Zhuozhou Chan</figcaption>
+				</div>
+			</div>
+			<div id="mail">
+				Google:edisonzhouzhou@gmail.com<br>
 			</div>
 		</div>
 	</div>
-
+	<div id="footer">
+		Designed and developed by Edison Chan.
+	</div>
 
 
 
@@ -94,7 +114,37 @@
 				flag=1;
 			}
 
-		})
+		});
+		window.onload=function(){
+			var omap=document.getElementById("map");
+			var obj=omap.getElementsByTagName("a");
+			//随机方法
+			function rand(num){
+				return parseInt(Math.random()*num+1);
+			}
+			//随机颜色值
+			function randomcolor(){
+				var str=Math.ceil(Math.random()*16777215).toString(16);
+				if(str.length<6){
+					str="0"+str;
+				}
+				return str;
+			}
+			//循环
+			for( len=obj.length,i=len;i--;){
+				obj[i].className="color"+rand(5);
+				obj[i].style.zIndex=rand(5);
+				obj[i].style.fontSize=rand(12)+16+"px";
+				// obj[i].style.background="#"+randomcolor();
+				obj[i].style.color="#"+randomcolor();
+				obj[i].onmouseover=function(){
+					this.style.background="#"+randomcolor();
+				}
+				obj[i].onmouseout=function(){
+					this.style.background="none";
+				}
+			}
+		}
 	</script>
 </body>
 
