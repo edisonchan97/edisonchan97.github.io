@@ -18,9 +18,9 @@
 	<div>
 		<ul id="my-nav">
 			<li id="nav-title">LOOK ME</li>
-			<li>MY INFO</li>
-			<li>MY PROJECT</li>
-			<li>MY SHARE</li>
+			<li id="myinfo">MY INFO</li>
+			<li id="myproject">MY PROJECT</li>
+			<li id="myshare">MY SHARE</li>
 		</ul>
 	</div>
 
@@ -252,6 +252,54 @@
 				}
 			}
 		}
+//		var info = document.getElementById("myinfo");
+//		var project = document.getElementById("myproject");
+//		var share = document.getElementById("myshare");
+		$("#myinfo").click(function () {
+			$info = $(this).text();
+			$("#my-info").css("display","block");
+			$("#my-project").css("display","none");
+			$("#my-share").css("display","none");
+			if(flag==1){
+				$("#my-nav li").css("display","block");
+				flag=0;
+			}else{
+				$("#my-nav li").css("display","none");
+				$("#my-nav #nav-title").css("display","block");
+				flag=1;
+			}
+			$("#nav-title").text($info);
+		});
+		$("#myproject").click(function () {
+			$project = $(this).text();
+			$("#my-info").css("display","none");
+			$("#my-project").css("display","block");
+			$("#my-share").css("display","none");
+			if(flag==1){
+				$("#my-nav li").css("display","block");
+				flag=0;
+			}else{
+				$("#my-nav li").css("display","none");
+				$("#my-nav #nav-title").css("display","block");
+				flag=1;
+			};
+			$("#nav-title").text($project);
+		});
+		$("#myshare").click(function () {
+			$share = $(this).text();
+			$("#my-info").css("display","none");
+			$("#my-project").css("display","none");
+			$("#my-share").css("display","block");
+			if(flag==1){
+				$("#my-nav li").css("display","block");
+				flag=0;
+			}else{
+				$("#my-nav li").css("display","none");
+				$("#my-nav #nav-title").css("display","block");
+				flag=1;
+			};
+			$("#nav-title").text($share);
+		});
 	</script>
 </body>
 
