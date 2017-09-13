@@ -8,7 +8,13 @@
 	<script type="text/javascript" src="javascripts/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-	<div id="my-title"><h1>Edison的树屋</h1></div>
+<!--139450109126-->
+<div id="room">
+	<audio src="room.mp3" controls="controls">
+		Your browser does not support the audio element.
+	</audio>
+</div>
+	<div id="my-title"><h1>Edison的房间</h1></div>
 	<div>
 		<ul id="my-nav">
 			<li id="nav-title">LOOK ME</li>
@@ -17,7 +23,9 @@
 			<li>MY SHARE</li>
 		</ul>
 	</div>
-	<div id="my-info" style="display:none;">
+
+	<!-- info-->
+	<div id="my-info">
 		<div id="introduce">
 			我是<strong>陈卓州</strong><br>
 			出生于 <a href="https://www.baidu.com/s?wd=%E6%B9%96%E5%8D%97%E5%B2%B3%E9%98%B3">湖南岳阳</a>，
@@ -82,12 +90,14 @@
 				</div>
 			</div>
 			<div id="mail">
-				Google:edisonzhouzhou@gmail.com<br>
+				Google:edisonzhuozhou@gmail.com<br>
 			</div>
 		</div>
 	</div>
 
-	<div id="my-project">
+
+	<!-- project -->
+	<div id="my-project" style="display: none">
 		<strong>我都做过啥</strong><br/>
 		<span id="szpfr">深圳市鹏锋瑞装饰设计工程有限公司官网</span><br/>
 		简介：<p>&nbsp;&nbsp;&nbsp;项目完成时间为2017年9月，项目即将上线，网址正在备案期间。</p>
@@ -101,15 +111,57 @@
 		<div class="gallery">
 			<img src="images/szpfr-mobile.jpg" alt=""/>
 			<figcaption>移动端</figcaption>
-			<img src="images/szpfr-pc-small.jpg" alt=""/>
+			<img src="images/szpfr-pc-small.jpg" alt="" class="pc"/>
 			<figcaption>pc端</figcaption>
 		</div>
-		网站地址：<br>
+		项目地址：<br>
 		<p>&nbsp;&nbsp;&nbsp;敬请期待~</p>
+		<hr/>
+		<div id="contact">
+			<p>如果你有项目，我觉得可以合作一番&#8623<br>
+				Google:edisonzhuozhou@gmail.com</p>
+		</div>
 	</div>
 
+<!--share-->
+	<div id="my-share" style="display: none">
+		<strong>给大佬递书</strong><br/>
+		<ul>
+			<li>前端Web
+				<ul>
+					<li><div class="book">
+						<img src="images/html5-css3.jpg" alt=""/>
+						<strong><a href="http://pan.baidu.com/s/1c2vU8da">html5与css3</a>&#8678<span class="download">点击下载</span></strong>
+					</div></li>
+				</ul>
+			</li>
 
-
+			<li>后端Server
+				<ul>
+					<li><div class="book">
+						<img src="images/nodejs.jpg" alt=""/>
+						<strong><a href="http://pan.baidu.com/s/1qXOwmlA">Node.js</a>&#8678<span class="download">点击下载</span></strong>
+					</div></li>
+				</ul>
+			</li>
+			<li>算法Algorithm
+				<ul>
+					<li><div class="book">
+						<img src="images/ahaalg.jpg" alt=""/>
+						<strong><a href="http://pan.baidu.com/s/1dFw85pB">啊哈！算法</a>&#8678<span class="download">点击下载</span></strong>
+					</div></li>
+				</ul>
+			</li>
+			<li>
+				<hr/>
+				更多前端相关书籍&#9660 <br/>
+				<a href="http://pan.baidu.com/s/1dFMqWWL" id="qianduan">前端必看100本PDF电子书</a>
+			</li>
+			<li>
+				<p id="qq">前端交流群：162605336</p>
+			</li>
+		</ul>
+	</div>
 
 
 
